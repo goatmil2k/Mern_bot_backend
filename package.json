@@ -1,0 +1,31 @@
+{
+  "name": "mern-bot",
+  "version": "1.0.0",
+  "description": "Chat bot made with mern stack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js node --trace-deprecation\"",
+    "start": "node dist/index.js",
+    "build": "tsc"
+  },
+  "author": "Krishna",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "*",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.3",
+    "morgan": "^1.10.0",
+    "openai": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "concurrently": "^8.2.2",
+    "nodemon": "^2.0.15"
+  }
+}
